@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Snobin Abraham</h1>
+        <ul class="navigation">
+            <li><a (click)="scrollToSection('moreabout')" class="nav-link" >About</a></li>
+            <li><a (click)="scrollToSection('skills')" class="nav-link" >Skills</a></li>
+            <!-- ... other links ... -->
+            <li><a (click)="scrollToSection('projects')" class="nav-link" href="projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <div class="bar"></div>
+        </button>
+    </nav>
+
+    <section class="hero" id="about">
+        <img src="assets/images/portfolio.jpg"  loading="lazy" class="hero-img fit-screen" />
+        <div >
+            <p class="bio-text"
+                style="font-size: 30px; font-weight: bold; background: linear-gradient(45deg, #4756df, #ff7235); -webkit-background-clip: text; color: transparent;">
+                Hi, I'm Snobin Abraham<br>
+                SDE|Tech Enthusiast
+            </p>
+            <div>
+                <button class="btn">Get Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="moreabout" id="moreabout" style="padding-top: 2rem;">
+        <h2>More About Me</h2>
+        <p>
+            <strong>I am a Computer Science engineer with a passion for technology and software development. I enjoy the challenges of competitive coding and have a deep interest in system design. My journey in the world of technology has been an exciting one, and I'm constantly learning and exploring new concepts.</strong>
+        </p>
+        <p>
+            <strong>Whether it's solving complex coding problems, designing efficient systems, or keeping up with the latest trends in technology, I'm always eager to dive into the world of innovation and problem-solving.</strong>
+        </p>
+        <p>
+            <strong>Let's connect and explore the limitless possibilities of technology together!</strong>
+        </p>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets\images\springboot.png" alt="Spring Boot" class="icon icon-card" />
+                <img src="assets\images\java.jpg" alt="Java" class="icon icon-card" />
+                <img src="assets\images\AngularJS-Shield.svg" alt="Angular" class="icon icon-card" />
+            </div>
+    
+            <div class="third-set animate__animated animate__pulse">
+                <img src="assets\images\python.jpg" alt="Python" class="icon icon-card" />
+                <img src="assets\images\cpp_logo.png" alt="C++" class="icon icon-card" />
+                <img src="assets\images\mysql.svg" alt="Database" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/walk.jpg" alt="Gait Recognition" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Gait Recognition</h3>
+                <div class="project-details">
+                    <p class="tech-stack">Technical Stack:</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>YOLOv8</li>
+                        <li>Django</li>
+                    </ul>
+                    <p class="project-description">
+                        Project built with ML and Python, using YOLOv8 and Django for gait recognition.
+                    </p>
+                </div>
+                <a href="https://github.com/Snobin/Gait_dj.git" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/school.jpg" alt="Campox" loading="" class="project-pic" />
+                <h3 class="project-title">Campox</h3>
+                <div class="project-details">
+                    <p class="tech-stack">Technical Stack:</p>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                    </ul>
+                    <p class="project-description">
+                        React Native mobile application for campus applications. Technical stacks include React Native and Flutter.
+                    </p>
+                </div>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/hotel.jpg" alt="Hotel Management Application" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Hotel Management Application</h3>
+                <div class="project-details">
+                    <p class="tech-stack">Technical Stack:</p>
+                    <ul>
+                        <li>Java Spring Boot</li>
+                        <li>MySQL</li>
+                        <li>AngularJS</li>
+                    </ul>
+                    <p class="project-description">
+                        Hotel management application using Java Spring Boot, MySQL, and AngularJS.
+                    </p>
+                </div>
+                <a href="https://github.com/Snobin/Hotel-Management-App.git" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/clap.png" alt="Movie Booking App" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Movie Booking App</h3>
+                <div class="project-details">
+                    <p class="tech-stack">Technical Stack:</p>
+                    <ul>
+                        <li>Java Spring Boot</li>
+                        <li>MySQL</li>
+                        <li>AngularJS</li>
+                    </ul>
+                    <p class="project-description">
+                        Movie booking application using Java Spring Boot, MySQL, and AngularJS.
+                    </p>
+                </div>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="" method="POST" class="form-group">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="socials">
+        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+
+    <footer>
+        <p class="copy">&copy; Copyright 2023 Snobin Abraham</p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"><i class="fas fa-arrow-up up-arrow"></i></i>
+
+</body>
+
+</html>
