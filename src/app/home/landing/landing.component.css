@@ -26,9 +26,33 @@
   
 }
 
+  nav {
+    background-color: rgba(252, 252, 252, 0.9); /* Add your desired background color here */
+    /* Your existing styles for nav */
+  }
+  
+  .menu-open {
+    background-color: rgba(252, 252, 252, 0.9); /* Add the same background color for the menu when open */
+  }
+  
+
 ul {
   list-style-type: none;
 }
+ul.navigation li {
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  ul.navigation li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set the text color */
+  }
+  
+  ul.navigation li a:hover {
+    color: var(--secondary-color); /* Change text color on hover */
+  }
 
 a {
   text-decoration: none;
@@ -429,7 +453,8 @@ footer {
 
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    background-color:#ECE3CE;
+
     flex-direction: column;
     top: 86px;
     left: 10%;
@@ -466,4 +491,55 @@ footer {
     margin-top: -7rem;
     width: 20.5rem;
   }
+
+  .moreabout {
+    padding: 1rem 1rem; /* Adjust padding for better mobile layout */
+  }
+
+  .moreabout h2 {
+    font-size: 1.5rem; /* Adjust font size for headings */
+  }
+
+  .moreabout p {
+    font-size: 1rem; /* Adjust font size for paragraphs */
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+  }
+
+  .project-card {
+    width: 50%; /* Each project occupies 50% of the container width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding: 1rem; /* Add some padding to the projects for spacing */
+  }
+
+  .project-card,
+  .icon-card {
+    width: 100%; /* Make project cards and icon cards take up full width */
+  }
+
+  .project-card,
+  .icon-card {
+    margin: 0 0 1rem; /* Adjust spacing between project and icon cards */
+  }
+
+  .skills img {
+    width: 100px; /* Adjust image size for skills icons */
+    height: 100px;
+  }
+
+  .btn {
+    width: 100%; /* Make buttons take up full width */
+    margin: 1rem 0; /* Adjust margin between buttons */
+  }
+
+  .contact-form-container {
+    padding: 1rem; /* Adjust padding for contact form container */
+  }
+
+  .input-field {
+    margin: 0 0 1rem; /* Adjust spacing between input fields */
+  }
+
 }

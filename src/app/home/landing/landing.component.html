@@ -12,17 +12,19 @@
 <body>
     <nav>
         <h1>Snobin Abraham</h1>
-        <ul class="navigation">
-            <li><a (click)="scrollToSection('moreabout')" class="nav-link" >About</a></li>
-            <li><a (click)="scrollToSection('skills')" class="nav-link" >Skills</a></li>
+        <ul class="navigation" [ngClass]="{ 'menu-open': isMenuOpen }" >
+            <li><a (click)="hideMenu(); scrollToSection('moreabout')" class="nav-link" >About</a></li>
+            <li><a (click)="hideMenu(); scrollToSection('skills')" class="nav-link" >Skills</a></li>
             <!-- ... other links ... -->
-            <li><a (click)="scrollToSection('projects')" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a (click)="hideMenu(); scrollToSection('projects')" class="nav-link">Projects</a></li>
+            <li><a (click)="hideMenu(); scrollToSection('contact')" class="nav-link">Contact</a></li>
+            
         </ul>
         <button class="burger-menu" id="burger-menu">
-            <div class="bar"></div>
+            <i class="fas fa-bars"></i>
         </button>
     </nav>
+
 
     <section class="hero" id="about">
         <img src="assets/images/portfolio.jpg"  loading="lazy" class="hero-img fit-screen" />
@@ -171,6 +173,8 @@
     </footer>
     <i class="scroll-up" id="scroll-up"><i class="fas fa-arrow-up up-arrow"></i></i>
 
+
+   
 </body>
 
 </html>

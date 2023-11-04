@@ -6,6 +6,8 @@ import { Component, Renderer2 } from '@angular/core';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent {
+  isMenuOpen = false;
+
   burger: HTMLElement | null;
   ul: HTMLUListElement | null;
   nav: HTMLElement | null;
@@ -74,6 +76,13 @@ export class LandingComponent {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  hideMenu() {
+    this.isMenuOpen = false;
+
+    if (this.ul?.classList.contains("show")) {
+      this.ul?.classList.remove("show");
     }
   }
 
